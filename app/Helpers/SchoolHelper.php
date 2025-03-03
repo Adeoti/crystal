@@ -8,7 +8,7 @@ use App\Models\Teacher;
 if (!function_exists('getSchoolDetails')) {
     function getSchoolDetails()
     {
-        $school = Setting::firstOrFail();
+        // $school = Setting::firstOrFail();
 
         return [
             // 'school_name' => $school->school_name,
