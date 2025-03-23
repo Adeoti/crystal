@@ -264,7 +264,7 @@
 
                                     </tr>
                                     <tr>
-                                        <td style="font-weight:600; width: 30%;" class="border px-2 py-1">Principal's Remarks</td>
+                                        <td style="font-weight:600; width: 30%;" class="border px-2 py-1">HOD's Remarks</td>
                                         <td>
                                             @php
                                                 $overallAverage = round(array_sum(array_column($studentData['subjects'], 'total')) / count($studentData['subjects']), 2);
@@ -299,7 +299,7 @@
                                
                                 {{ $schoolDetails['principal_name'] }}
                                 <br>
-                                <b><cite>Principal</cite></b>
+                                <b><cite>HOD</cite></b>
                                         
 
                             </div>
