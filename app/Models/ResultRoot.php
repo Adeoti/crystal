@@ -28,6 +28,11 @@ class ResultRoot extends Model
 
 
 
+    public function resultUploads()
+    {
+        return $this->hasMany(ResultUpload::class, 'result_root_id');
+    }
+
 
     public function gradingSystem()
     {
