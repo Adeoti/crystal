@@ -237,8 +237,25 @@
                                     $grade_systems = App\Models\GradingSystem::find($record->grading_system_id);
                                     $grading_system = $grade_systems->grading_system;
 
+                                    $usb = App\Models\StudentSkillBehaviour::with('scores.category')
+                                        ->where('student_id', $studentId)
+                                        ->whereHas('skillBehaviour', function ($q) use ($record) {
+                                            $q->where('result_root_id', $record->id);
+                                        })
+                                        ->first();
 
+                                    $skills = [];
+                                    $behaviours = [];
 
+                                    if ($usb) {
+                                        foreach ($usb->scores as $score) {
+                                            if ($score->category->type === 'skill') {
+                                                $skills[] = $score;
+                                            } elseif ($score->category->type === 'behavior') {
+                                                $behaviours[] = $score;
+                                            }
+                                        }
+                                    }
                                 @endphp
                                 <strong>Key to Grades:</strong> 
                                 @foreach ($grading_system as $grade)
@@ -269,11 +286,9 @@
                                             @php
                                                 $overallAverage = round(array_sum(array_column($studentData['subjects'], 'total')) / count($studentData['subjects']), 2);
                                                 if ($overallAverage >= 90) {
-                                                    //Let $comment have random value like 'Excellent result!', or 'Outstanding result!', or 'Super performance!'
                                                     $comments = ['Excellent result!', 'Outstanding result!', 'Super performance!'];
                                                     $comment = $comments[array_rand($comments)];
                                                 } elseif ($overallAverage >= 80) {
-                                                    $comment = 'Very good result!';
                                                     $comments = ['Very good result!', 'Keep it up!', 'Keep up your brilliance!'];
                                                     $comment = $comments[array_rand($comments)];
                                                 } elseif ($overallAverage >= 70) {
@@ -294,6 +309,66 @@
                                 </tbody>
                             </table>
 
+                            {{-- Skills and Behaviours Section --}}
+@if($usb)
+    <div style="margin-top: 40px;">
+        <h3 style="text-align:center; font-weight:bold; font-size:1.2rem; margin-bottom:10px;">
+            SKILLS AND BEHAVIOURS
+        </h3>
+
+        <div style="display:flex; justify-content:space-between; gap:30px;">
+            {{-- Skills Table --}}
+            <table class="border-collapse border border-gray-400 text-center w-1/2">
+                <thead style="background:#f0f0f0;">
+                    <tr>
+                        <th class="border px-2 py-1 text-left">SKILLS (1-5)</th>
+                        @for ($i = 5; $i >= 1; $i--)
+                            <th class="border px-2 py-1">{{ $i }}</th>
+                        @endfor
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($skills as $s)
+                        <tr>
+                            <td class="border px-2 py-1 text-left">{{ $s->category->name }}</td>
+                            @for ($i = 5; $i >= 1; $i--)
+                                <td class="border px-2 py-1">
+                                    @if($s->score == $i) ✔ @endif
+                                </td>
+                            @endfor
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+
+            {{-- Behaviours Table --}}
+            <table class="border-collapse border border-gray-400 text-center w-1/2">
+                <thead style="background:#f0f0f0;">
+                    <tr>
+                        <th class="border px-2 py-1 text-left">BEHAVIOURS (1-5)</th>
+                        @for ($i = 5; $i >= 1; $i--)
+                            <th class="border px-2 py-1">{{ $i }}</th>
+                        @endfor
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($behaviours as $b)
+                        <tr>
+                            <td class="border px-2 py-1 text-left">{{ $b->category->name }}</td>
+                            @for ($i = 5; $i >= 1; $i--)
+                                <td class="border px-2 py-1">
+                                    @if($b->score == $i) ✔ @endif
+                                </td>
+                            @endfor
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+@endif
+
+
                             <div style="margin-top:30px;">
                                 <img src="{{ Storage::url($principal_signature) }}" alt="signature" class="logo-img" style="height: 50px;">
                                
@@ -307,6 +382,11 @@
                               <br><hr><br>
 
                         </div>
+
+
+
+
+
                     </div>
                 @endforeach
             </div>
@@ -337,6 +417,16 @@
         tr:nth-child(odd){
             background-color: #d2eafd;
         }
+        table.skills-behaviours td, 
+table.skills-behaviours th {
+    padding: 6px;
+    text-align: center;
+}
+table.skills-behaviours th:first-child,
+table.skills-behaviours td:first-child {
+    text-align: left;
+}
+
     </style>
 
     {{-- Tab Switching Script --}}
