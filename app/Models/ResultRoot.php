@@ -18,6 +18,7 @@ class ResultRoot extends Model
         'exam_score_columns',
         'grading_system_id',
         'next_term',
+        'section_address',
     ];
 
 

@@ -36,7 +36,7 @@ class ResultRootResource extends Resource
     protected static ?string $navigationLabel = 'Result Root';
 
 
- 
+
 
     public static function form(Form $form): Form
     {
@@ -44,46 +44,49 @@ class ResultRootResource extends Resource
             ->schema([
                 Section::make('Details')
                     ->schema([
-                    Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
+                        Forms\Components\TextInput::make('name')
+                            ->required()
+                            ->maxLength(255),
 
-                    Select::make('grading_system_id')
-                    ->label('Grading System')
-                    ->options(GradingSystem::all()->pluck('name', 'id'))
-                    ->required(),
-                    
-                    DatePicker::make('next_term')
-                        ->required()
-                        ->label('Next Term Begins')
-                    
-                    ,
-                Forms\Components\Textarea::make('description')
-                    ->required()
-                    ->columnSpanFull(),
-                Select::make('branch_ids')
-                    ->label('Branches')
-                    ->required()
-                    ->options(Branch::all()->pluck('name', 'id'))
-                    ->multiple()
-                    ->columnSpanFull(),
+                        Select::make('grading_system_id')
+                            ->label('Grading System')
+                            ->options(GradingSystem::all()->pluck('name', 'id'))
+                            ->required(),
 
+                        DatePicker::make('next_term')
+                            ->required()
+                            ->label('Next Term Begins'),
+                        Forms\Components\Textarea::make('description')
+                            ->required()
+                            ->columnSpanFull(),
+                        Select::make('branch_ids')
+                            ->label('Branches')
+                            ->required()
+                            ->options(Branch::all()->pluck('name', 'id'))
+                            ->multiple()
+                            ->columnSpanFull(),
+                        Textarea::make('section_address')
+                            ->label('Section Address')
+                            ->required()
+                            ->placeholder('Enter the address of the section (e.g., Senior Section, 123 Main St, City, Country)')
+                            ->helperText('This address will appear on the result sheets to identify the section.')
+                            ->columnSpanFull(),
 
-              Section::make('Exam Score Columns')
-                    ->collapsible()
-                    ->description('Create exam scrore columns to use for result calculation')
-                    ->schema([
-                        Repeater::make('exam_score_columns')
-                        ->label('exam score columns')
-                        ->schema([
-                            TextInput::make('label')->label('Column Label')->placeholder('E.g. 1st CA')->required(),
-                            TextInput::make('overall_score')->label('Overall Score')->placeholder('E.g. 100')->required(),
-                            
-                        ])
-                        ->columns(2)
-                        ->columnSpanFull(),
-              ])
-                
+                        Section::make('Exam Score Columns')
+                            ->collapsible()
+                            ->description('Create exam scrore columns to use for result calculation')
+                            ->schema([
+                                Repeater::make('exam_score_columns')
+                                    ->label('exam score columns')
+                                    ->schema([
+                                        TextInput::make('label')->label('Column Label')->placeholder('E.g. 1st CA')->required(),
+                                        TextInput::make('overall_score')->label('Overall Score')->placeholder('E.g. 100')->required(),
+
+                                    ])
+                                    ->columns(2)
+                                    ->columnSpanFull(),
+                            ])
+
                     ])->columns(3),
             ]);
     }
@@ -100,7 +103,7 @@ class ResultRootResource extends Resource
                 Tables\Columns\TextColumn::make('gradingSystem.name')
                     ->numeric()
                     ->sortable(),
-                    ViewColumn::make('branch_ids')
+                ViewColumn::make('branch_ids')
                     ->view('tables.columns.branches')
                     ->label('Branches'),
                 Tables\Columns\TextColumn::make('next_term')
@@ -118,25 +121,22 @@ class ResultRootResource extends Resource
                 //
             ])
             ->actions([
-              
-                Tables\Actions\EditAction::make()
-                ->button()
-                ,
-                Tables\Actions\Action::make('View Results')
-                ->button()
-                ->color('purple')
-                ->label('View Results')
-                ->action(fn (ResultRoot $record) => redirect()->route('filament.admin.resources.result-roots.view-results', ['record' => $record->id]))
 
-                ,
+                Tables\Actions\EditAction::make()
+                    ->button(),
+                Tables\Actions\Action::make('View Results')
+                    ->button()
+                    ->color('purple')
+                    ->label('View Results')
+                    ->action(fn(ResultRoot $record) => redirect()->route('filament.admin.resources.result-roots.view-results', ['record' => $record->id])),
                 Tables\Actions\Action::make('CSV template')
-                ->label('Generate CSV Template')
-                ->icon('heroicon-s-arrow-down-tray')
-                ->color('success')
-                ->requiresConfirmation()
-                ->button()
-                ->action(fn (ResultRoot $record) => static::downloadCsvTemplate($record)),
-               
+                    ->label('Generate CSV Template')
+                    ->icon('heroicon-s-arrow-down-tray')
+                    ->color('success')
+                    ->requiresConfirmation()
+                    ->button()
+                    ->action(fn(ResultRoot $record) => static::downloadCsvTemplate($record)),
+
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -151,20 +151,20 @@ class ResultRootResource extends Resource
     //         'Content-Type' => 'text/csv',
     //         'Content-Disposition' => 'attachment; filename="csv_template.csv"',
     //     ];
-    
+
     //     // Define the columns for your CSV template
     //     $columns = ['Student_ID', 'Column2', 'Column3'];  // Replace with actual column names
-    
+
     //     $callback = function () use ($columns) {
     //         $file = fopen('php://output', 'w');
-    
+
     //         // Add the headers for your CSV columns
     //         fputcsv($file, $columns);
-    
+
     //         // Close the file stream
     //         fclose($file);
     //     };
-    
+
     //     // Return the CSV as a streamed response
     //     return new StreamedResponse($callback, 200, $headers);
     // }
@@ -173,12 +173,12 @@ class ResultRootResource extends Resource
     {
         // Initialize the CSV headers with "Student_ID" as the first column
         $columns = ['Student_ID'];
-    
+
         // Check if the record has `exam_score_columns` data
         if (is_array($record->exam_score_columns)) {
             // Use the exam_score_columns array directly
             $examScoreColumns = $record->exam_score_columns;
-    
+
             // Generate columns based on "label" and "overall_score"
             foreach ($examScoreColumns as $column) {
                 $label = $column['label'] ?? 'Unknown';
@@ -186,29 +186,29 @@ class ResultRootResource extends Resource
                 $columns[] = "{$label} - {$overallScore}";
             }
         }
-    
+
         // Make the file name dynamic using the record's name, replacing spaces with underscores
         $fileName = str_replace(' ', '_', $record->name) . '_template.csv';
-    
+
         $headers = [
             'Content-Type' => 'text/csv',
             'Content-Disposition' => "attachment; filename=\"{$fileName}\"",
         ];
-    
+
         $callback = function () use ($columns) {
             $file = fopen('php://output', 'w');
-    
+
             // Add the headers for your CSV columns
             fputcsv($file, $columns);
-    
+
             // Close the file stream
             fclose($file);
         };
-    
+
         return new StreamedResponse($callback, 200, $headers);
     }
-    
-    
+
+
 
 
     public static function getRelations(): array

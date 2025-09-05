@@ -64,7 +64,8 @@
                         </div>
                         <div class="text-center">
                             <h2 class="font-bold" style="font-size: 2.7rem;">{{ $schoolDetails['school_name'] }}</h2>
-                            <p><b>Address: </b> {{ $schoolDetails['school_address'] }}</p>
+                            {{-- <p><b>Address: </b> {{ $schoolDetails['school_address'] }}</p> --}}
+                            <p><b>Address: </b> {{ $record->section_address ?? $schoolDetails['school_address'] }}</p>
                             <p><b>Phone:</b> {{ $schoolDetails['school_phone'] }}</p>
                         </div>
                         <div class="student_passport">

@@ -6,7 +6,9 @@
 
        <div style="background: #003333; color:#fff; text-align:center; padding:10px 0px;">
         <a href="{{ route('download-report-cards', $record->id) }}" class="btn btn-primary" style="border-radius:10px; border:1px solid #fff; padding:5px 10px;" >Download Report Cards as PDF</a>
-       </div> 
+      
+        
+    </div> 
        
 
 
@@ -125,7 +127,7 @@
                                 <img src="{{ Storage::url($school_logo) }}" alt="Logo" class="logo-img" style="height: 70px; border-radius: 10%;">
                             </div>
                           <div class="text-center">  <h2 class="font-bold" style="font-size: 2.7rem;">{{ $schoolDetails['school_name'] }}</h2>
-                            <p><b>Address: </b> {{ $schoolDetails['school_address'] }}</p>
+                            <p><b>Address: </b> {{ $record->section_address ?? $schoolDetails['school_address'] }}</p>
                             <p><b>Phone:</b> {{ $schoolDetails['school_phone'] }}</p>
                             </div>
                             <div class="student_passport">
