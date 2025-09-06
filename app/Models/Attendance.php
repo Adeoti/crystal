@@ -10,7 +10,7 @@ class Attendance extends Model
 {
     //
 
-    protected $fillable = ['student_id', 'class_id', 'attendance_date', 'status', 'branch_id','marked_by'];
+    protected $fillable = ['student_id', 'class_id', 'attendance_date', 'status', 'branch_id', 'marked_by', 'result_root_id'];
 
     public function student()
     {
@@ -24,5 +24,8 @@ class Attendance extends Model
     public function branch()
     {
         return $this->belongsTo(Branch::class);
+    }
+    public function resultRoot(){
+        return $this->belongsTo(ResultRoot::class, 'result_root_id');
     }
 }

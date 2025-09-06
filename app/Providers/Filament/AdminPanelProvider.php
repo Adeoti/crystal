@@ -24,8 +24,8 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 class AdminPanelProvider extends PanelProvider
 {
 
-  
-    
+
+
     public function panel(Panel $panel): Panel
     {
         $schoolDetails = getSchoolDetails();
@@ -35,6 +35,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->sidebarCollapsibleOnDesktop()
             ->colors([
                 'primary' => Color::Red,
                 'success' => Color::Green,

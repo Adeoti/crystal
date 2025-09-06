@@ -28,8 +28,9 @@ class StudentPanelProvider extends PanelProvider
             ->id('student')
             ->path('student')
             ->brandName($schoolDetails['school_name'])
+            ->sidebarCollapsibleOnDesktop()
             ->login()
-            
+
             ->colors([
                 'primary' => Color::Purple,
 

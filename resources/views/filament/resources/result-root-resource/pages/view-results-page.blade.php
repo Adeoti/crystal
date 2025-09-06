@@ -145,6 +145,8 @@
                      <h2 class="text-xl font-bold">{{ $studentData['info']->name }}</h2>
                      <p>Student ID: {{ $studentData['info']->id }}</p>
                      <p>Email: {{ $studentData['info']->email }}</p>
+                     {{-- Count attendance where status = Present and result_root_id = $record->id and student_id = $studentData['info']->id --}}
+                     <p>Attendance: {{ App\Models\Attendance::where('result_root_id', $record->id)->where('student_id', $studentData['info']->id)->count() }}</p>
                     </div>
  
                     @php
@@ -166,6 +168,7 @@
                 <p class="detail-item"><span class="bold" style="font-weight: 600; color:darkmagenta;">{{$record->name}}</span></p>
                  <p class="detail-item"><span class="bold">Roll Number:</span> {{ $student->student->roll_number ?? 'N/A' }}</p>
                  <p class="detail-item"><span class="bold">Guardian:</span> {{ $student->student->guardian_name ?? 'N/A' }}</p>
+                 <p>Times present: {{ App\Models\Attendance::where('status', 'Present')->where('result_root_id', $record->id)->where('student_id', $studentData['info']->id)->count() }}</p>
                  
              </div>
  

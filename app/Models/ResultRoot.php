@@ -39,4 +39,9 @@ class ResultRoot extends Model
     {
         return $this->belongsTo(GradingSystem::class);
     }
+
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class, 'result_root_id');
+    }
 }

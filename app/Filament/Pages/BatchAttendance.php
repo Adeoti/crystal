@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Filament\Pages;
 
 use Filament\Pages\Page;
@@ -23,6 +24,7 @@ class BatchAttendance extends Page
     public $branch_id;
     public $attendance_date;
     public $students = [];
+    public $result_root_id;
 
     protected function getFormSchema(): array
     {
@@ -58,7 +60,16 @@ class BatchAttendance extends Page
                         ->label('Date')
                         ->required()
                         ->default(now()),
-                ])->columns(3),
+                    Select::make('result_root_id')
+                        ->label('Result Template')
+                        // ->options(function (callable $get) {
+                        //     $branchId = $get('branch_id');
+                        //     return $branchId
+                        //         ? \App\Models\ResultRoot::whereJsonContains('branch_ids', $branchId)->pluck('name', 'id')
+                        //         : ['0' => 'No matched templates found'];
+                        // })
+                        ->options(\App\Models\ResultRoot::all()->pluck('name', 'id')),
+                ])->columns(4),
 
             Section::make('Students')
                 ->schema([
@@ -118,12 +129,13 @@ class BatchAttendance extends Page
                     'student_id' => $studentAttendance['student_id'],
                     'branch_id' => $data['branch_id'],
                     'attendance_date' => $data['attendance_date'],
+                    'result_root_id' => $data['result_root_id'] ?? null,
                 ],
                 [
                     'class_id' => $data['class_id'],
                     'status' => $studentAttendance['status'],
                     'marked_by' => auth()->user()->id,
-                    
+
                 ]
             );
         }
