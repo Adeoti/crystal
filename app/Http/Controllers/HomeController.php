@@ -14,9 +14,9 @@ class HomeController extends Controller
         //
         $schoolDetails = getSchoolDetails();
 
-        return view('fronts.edusoft-themes.elegant.home', compact('schoolDetails'));
-
-
+        // return view('fronts.edusoft-themes.elegant.home', compact('schoolDetails'));
+        return view('fronts.home2');
+        // #27293a, #f88e80, 
     }
 
     /**
