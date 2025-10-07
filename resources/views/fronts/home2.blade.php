@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Emergent Icon Int'l Schools - Empowering Global Citizens</title>
+    <title>Mercy Dew School - We Learn To Excel</title>
 
     <!-- Google Fonts -->
     <link
@@ -19,12 +19,12 @@
 
     <style>
         :root {
-            --primary-color: #f88e80;
-            --secondary-color: #27293a;
-            --accent-color: #f72585;
+            --primary-color: #3a86ff;
+            --secondary-color: #1d3557;
+            --accent-color: #e63946;
             --light-color: #f8f9fa;
             --dark-color: #212529;
-            --success-color: #4cc9f0;
+            --success-color: #2a9d8f;
             --warning-color: #f77f00;
             --info-color: #7209b7;
             --yellow: #ffbe0b;
@@ -1500,8 +1500,8 @@
         <div class="header-top">
             <div class="container">
                 <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> 08035852045</span>
-                    <span><i class="fas fa-envelope"></i> info@deemergenticons.edu.ng</span>
+                    <span><i class="fas fa-phone"></i> 08035270494, 08079845984</span>
+                    <span><i class="fas fa-envelope"></i> info@mercydewschool.edu.ng</span>
                 </div>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1514,8 +1514,9 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="{{asset('school-images/theemergent_logo.webp')}}" alt="De Emergent Icon Int'l Schools Logo">
-                    <h1>De Emergent <span>Icons</span></h1>
+                    <!-- Placeholder for school logo -->
+                    <div style="width: 60px; height: 60px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">MDS</div>
+                    <h1>Mercy <span>Dew</span> School</h1>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#" class="nav-link" data-page="home">Home</a></li>
@@ -1542,8 +1543,8 @@
         <div class="floating-element"></div>
         <div class="container">
             <div class="hero-content">
-                <h2>Empowering Icons to Become Global Citizens</h2>
-                <p>Equipping students with the knowledge, skills, and values necessary to succeed in an ever-changing world through a curriculum that transcends geographical and cultural boundaries.</p>
+                <h2>We Learn To Excel</h2>
+                <p>A world-class standard school with diversity in learning, grooming students from kindergarten to secondary education with a focus on e-learning and computer-based training.</p>
                 <button class="btn" id="joinFamilyBtn">Join Our Family</button>
                 <button class="btn btn-outline" id="scheduleVisitBtn">Schedule a Visit</button>
             </div>
@@ -1554,18 +1555,18 @@
     <section class="welcome">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Welcome to De Emergent Icon Int'l Schools</h2>
+                <h2>Welcome to Mercy Dew School</h2>
             </div>
             <div class="welcome-content">
                 <div class="welcome-text" data-aos="fade-right">
-                    <h3>A Place Where Every Child Becomes a Global Citizen</h3>
-                    <p>At De Emergent Icon Int'l Schools, we believe in empowering icons to become global citizens equipped with the knowledge, skills, and values necessary to succeed in an ever-changing world.</p>
-                    <p>Our philosophy embraces a curriculum that transcends geographical and cultural boundaries, creating a truly international educational experience that prepares students for global leadership.</p>
+                    <h3>A Place Where Every Child Learns to Excel</h3>
+                    <p>At Mercy Dew School, we are passionate about providing a good standard education and eradicating examination malpractice in our society. We discovered the decay in our education system and are committed to grooming children from all classes with a solid foundation.</p>
+                    <p>We are currently implementing E-Learning in our school to prepare our students for a world that is switching to computer-based testing for all external examinations.</p>
                     <button class="btn" id="discoverStoryBtn">Discover Our Story</button>
                 </div>
                 <div class="welcome-image" data-aos="fade-left">
                     <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
-                        alt="Students at De Emergent Icon Int'l Schools">
+                        alt="Students at Mercy Dew School">
                 </div>
             </div>
         </div>
@@ -1582,32 +1583,32 @@
                     <div class="age-icon">
                         <i class="fas fa-baby"></i>
                     </div>
-                    <h3>Creche & Playpen</h3>
-                    <p>Nurturing the youngest learners in a safe, stimulating environment that encourages exploration and early development.</p>
+                    <h3>Kindergarten</h3>
+                    <p>KG1-KG3: Building strong foundations through play-based learning and structured activities that foster curiosity and creativity.</p>
                     <button class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Learn More</button>
                 </div>
                 <div class="age-card" data-aos="fade-up" data-aos-delay="200" data-age="primary">
                     <div class="age-icon">
                         <i class="fas fa-child"></i>
                     </div>
-                    <h3>Kindergarten & Nursery</h3>
-                    <p>Building foundational skills through play-based learning and structured activities that foster curiosity and creativity.</p>
+                    <h3>Primary</h3>
+                    <p>Basic 1-5: Developing academic excellence, critical thinking, and character through a comprehensive curriculum.</p>
                     <button class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Learn More</button>
                 </div>
                 <div class="age-card" data-aos="fade-up" data-aos-delay="300" data-age="junior-secondary">
                     <div class="age-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
-                    <h3>Primary</h3>
-                    <p>Developing academic excellence, critical thinking, and character through a comprehensive curriculum.</p>
+                    <h3>Junior Secondary</h3>
+                    <p>3-year program: Preparing students for senior secondary with a broad-based curriculum and foundational knowledge.</p>
                     <button class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Learn More</button>
                 </div>
                 <div class="age-card" data-aos="fade-up" data-aos-delay="400" data-age="senior-secondary">
                     <div class="age-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>College</h3>
-                    <p>Preparing students for higher education and global citizenship with specialized programs and advanced academic opportunities.</p>
+                    <h3>Senior Secondary</h3>
+                    <p>3-year program: Specialized programs preparing students for higher education and career paths with advanced academic opportunities.</p>
                     <button class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Learn More</button>
                 </div>
             </div>
@@ -1624,42 +1625,42 @@
                 <div class="program-card" data-aos="fade-up" data-aos-delay="100" data-program="stem">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Global Education">
+                            alt="E-Learning">
                     </div>
                     <div class="card-content">
-                        <h3>Global Curriculum</h3>
-                        <p>Our curriculum transcends geographical and cultural boundaries, preparing students for success in an interconnected world.</p>
+                        <h3>E-Learning & CBT</h3>
+                        <p>Preparing students for the digital age with computer-based training and e-learning platforms, ensuring they're ready for all external CBT examinations.</p>
                         <div>
-                            <span class="program-tag tag-academic">International</span>
-                            <span class="program-tag tag-creative">Cultural</span>
+                            <span class="program-tag tag-academic">Technology</span>
+                            <span class="program-tag tag-creative">Innovation</span>
                         </div>
                     </div>
                 </div>
                 <div class="program-card" data-aos="fade-up" data-aos-delay="200" data-program="arts">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-                            alt="Values Education">
+                            alt="World Class Education">
                     </div>
                     <div class="card-content">
-                        <h3>Values-Based Education</h3>
-                        <p>Instilling our core values of Service, Talent, Authenticity and Resilience in every student.</p>
+                        <h3>World Class Standards</h3>
+                        <p>Implementing world-class teaching methods and current revised curriculum to ensure our students can compete at any level globally.</p>
                         <div>
-                            <span class="program-tag tag-creative">Character</span>
-                            <span class="program-tag tag-sports">Values</span>
+                            <span class="program-tag tag-creative">Excellence</span>
+                            <span class="program-tag tag-sports">Quality</span>
                         </div>
                     </div>
                 </div>
                 <div class="program-card" data-aos="fade-up" data-aos-delay="300" data-program="sports">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Facilities">
+                            alt="Diverse Learning">
                     </div>
                     <div class="card-content">
-                        <h3>World-Class Facilities</h3>
-                        <p>Well-researched, state-of-the-art facilities designed to enhance the learning experience.</p>
+                        <h3>Diverse Learning</h3>
+                        <p>Providing diversity in learning to create impactful students who are well-rounded and prepared for the challenges of the modern world.</p>
                         <div>
-                            <span class="program-tag tag-sports">Facilities</span>
-                            <span class="program-tag tag-academic">Innovation</span>
+                            <span class="program-tag tag-sports">Diversity</span>
+                            <span class="program-tag tag-academic">Impact</span>
                         </div>
                     </div>
                 </div>
@@ -1677,7 +1678,7 @@
                 <div class="fun-fact" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-users"></i>
                     <h3>500+</h3>
-                    <p>Emerging Icons</p>
+                    <p>Students</p>
                 </div>
                 <div class="fun-fact" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-chalkboard-teacher"></i>
@@ -1685,9 +1686,9 @@
                     <p>Dedicated Educators</p>
                 </div>
                 <div class="fun-fact" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-smile"></i>
-                    <h3>95%</h3>
-                    <p>Parent Satisfaction</p>
+                    <i class="fas fa-laptop"></i>
+                    <h3>100%</h3>
+                    <p>CBT Prepared</p>
                 </div>
                 <div class="fun-fact" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-trophy"></i>
@@ -1707,38 +1708,38 @@
             <div class="activities-container">
                 <div class="activity" data-aos="fade-right" data-activity="science-labs">
                     <div class="activity-icon">
-                        <i class="fas fa-hands-helping"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="activity-content">
-                        <h3>Service</h3>
-                        <p>We instill a spirit of service and community responsibility in our students, encouraging them to make positive contributions to society.</p>
+                        <h3>Academic Excellence</h3>
+                        <p>We provide world-class teaching with a focus on the current revised curriculum, ensuring our students can compete at any level.</p>
                     </div>
                 </div>
                 <div class="activity" data-aos="fade-left" data-activity="arts-center">
                     <div class="activity-icon">
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="activity-content">
-                        <h3>Talent</h3>
-                        <p>We recognize and nurture the unique talents of each student, providing opportunities for them to discover and develop their abilities.</p>
+                        <h3>E-Learning</h3>
+                        <p>We embrace technology with e-learning and computer-based training to prepare students for the digital future.</p>
                     </div>
                 </div>
                 <div class="activity" data-aos="fade-right" data-activity="library">
                     <div class="activity-icon">
-                        <i class="fas fa-user-check"></i>
+                        <i class="fas fa-handshake"></i>
                     </div>
                     <div class="activity-content">
-                        <h3>Authenticity</h3>
-                        <p>We value authenticity and encourage students to be true to themselves while respecting others and embracing diversity.</p>
+                        <h3>Integrity</h3>
+                        <p>We are committed to eradicating examination malpractice and promoting honest academic achievement.</p>
                     </div>
                 </div>
                 <div class="activity" data-aos="fade-left" data-activity="playground">
                     <div class="activity-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-heart"></i>
                     </div>
                     <div class="activity-content">
-                        <h3>Resilience</h3>
-                        <p>We build resilience in our students, preparing them to face challenges with courage and perseverance.</p>
+                        <h3>Passion for Education</h3>
+                        <p>We have a genuine passion for providing quality education to children from all backgrounds.</p>
                     </div>
                 </div>
             </div>
@@ -1749,64 +1750,59 @@
     <section class="anthem-pledge">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>School Anthem & Pledge</h2>
+                <h2>School Anthem</h2>
             </div>
             <div class="anthem-pledge-container">
                 <div class="anthem" data-aos="fade-right">
                     <h3>School Anthem</h3>
                     <div class="anthem-content">
-                        <p><strong>Verse 1</strong><br>
-                        In unity we stand, with hearts and minds as one<br>
-                        At <strong>De Emergent Icons</strong>, our journey has just begun<br>
-                        We'll learn, we'll grow, we'll shine so bright<br>
-                        With knowledge, skills, and values, we'll make our mark tonight</p>
+                        <p>Mercy dew school is the best school,<br>
+                        is the best school in the world,<br>
+                        greater heights and mind exploits<br>
+                        is the portion of our school</p>
                         
-                        <p class="chorus"><strong>Chorus</strong><br>
-                        <strong>De Emergent Icons</strong>, we rise above<br>
-                        With innovation, creativity, and a heart of love<br>
-                        We'll make a difference, we'll make it real<br>
-                        <strong>De Emergent Icons</strong>, our spirit will reveal</p>
+                        <p>Self discipline and self confidence<br>
+                        is the moral of our school,<br>
+                        knowledge is light we learn to excel<br>
+                        we are light and we shine bright</p>
                         
-                        <p><strong>Verse 2</strong><br>
-                        From diverse backgrounds, we come as one<br>
-                        With a shared vision, to make our dreams come true<br>
-                        We'll strive for excellence, in all we do<br>
-                        And make a positive impact, on me, on you, on our community too</p>
+                        <p>Mercy dew school is the best school,<br>
+                        is the best school in the world,<br>
+                        greater heights and mind exploits<br>
+                        is the portion of our school</p>
                         
-                        <p class="chorus"><strong>Chorus</strong></p>
+                        <p>We are the learners of Mercy Dew school,<br>
+                        We are the learners of mercy dew,<br>
+                        we learn and create peace of mind<br>
+                        come to us you will know that we are good,<br>
+                        we are proud of Mercy Dew</p>
                         
-                        <p><strong>Bridge</strong><br>
-                        We'll stand together, through joy and strife<br>
-                        Supporting each other, as we navigate life<br>
-                        With empathy, kindness, and a willingness to learn<br>
-                        We'll become the leaders, of a brighter tomorrow's burn</p>
+                        <p>We live as one and share peace and love<br>
+                        learning to excel is the best thing<br>
+                        come to us you we know that we are good<br>
+                        we are proud of Mercy Dew</p>
                         
-                        <p class="chorus"><strong>Chorus</strong></p>
-                        
-                        <p><strong>Outro</strong><br>
-                        <strong>De Emergent Icons</strong>, we shine so bright<br>
-                        With a radiant light, that guides us through the night<br>
-                        We'll keep rising, to greater heights<br>
-                        <strong>De Emergent Icons</strong>, our anthem, our guiding light!</p>
+                        <p>We are proud !<br>
+                        We are proud !!<br>
+                        We are proud!!!</p>
                     </div>
                 </div>
                 <div class="pledge" data-aos="fade-left">
-                    <h3>School Pledge</h3>
+                    <h3>Our Philosophy</h3>
                     <div class="pledge-content">
-                        <p>I am a <strong>De Emergent Icon</strong>, a shining light<br>
-                        I pledge to ignite my potential, and make it bright<br>
-                        I will embrace challenges, and learn with glee<br>
-                        And use my talents to make a positive impact, globally</p>
+                        <p>At Mercy Dew School, our philosophy is simple yet powerful: <strong>Our students are learning to excel</strong>.</p>
                         
-                        <p>I will be a beacon of hope, in my community<br>
-                        A role model for others, with integrity<br>
-                        I will respect and celebrate, our diversity<br>
-                        And strive for excellence, with creativity</p>
+                        <p>This guiding principle shapes everything we do, from our curriculum design to our teaching methodologies. We believe that every child has the potential to achieve greatness when provided with the right environment, resources, and guidance.</p>
                         
-                        <p>I will be a force for good, with a heart that cares<br>
-                        A problem solver, with innovative flair<br>
-                        I am a <strong>De Emergent Icon</strong>, and I pledge to be<br>
-                        A leader of tomorrow, with a bright destiny</p>
+                        <p>Our motto "WE LEARN TO EXCEL" reflects our commitment to:</p>
+                        <ul>
+                            <li>Providing diverse learning opportunities</li>
+                            <li>Implementing world-class teaching standards</li>
+                            <li>Embracing technology in education</li>
+                            <li>Eradicating examination malpractice</li>
+                            <li>Building a solid educational foundation</li>
+                            <li>Preparing students for global competition</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -1821,7 +1817,7 @@
             </div>
             <div class="testimonials-container">
                 <div class="testimonial active">
-                    <p class="testimonial-text">De Emergent Icon Int'l Schools has transformed my child's approach to learning. The focus on global citizenship and values has helped her develop into a confident, compassionate individual who thinks beyond borders.</p>
+                    <p class="testimonial-text">Mercy Dew School has transformed my child's approach to learning. The focus on e-learning and computer-based training has prepared her for the digital age in ways I couldn't have imagined.</p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <img src="https://via.placeholder.com/70" alt="Parent">
@@ -1833,19 +1829,19 @@
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">The school's philosophy of transcending geographical and cultural boundaries is truly remarkable. My children are learning to appreciate diversity while developing strong academic foundations.</p>
+                    <p class="testimonial-text">The school's commitment to eradicating examination malpractice while providing world-class education is truly remarkable. My children are learning with integrity and excellence.</p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <img src="https://via.placeholder.com/70" alt="Parent">
                         </div>
                         <div class="author-info">
                             <h4>Mr. Adebayo</h4>
-                            <p>Parent of College Student</p>
+                            <p>Parent of Secondary Student</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="testimonial-text">As an educator myself, I appreciate how De Emergent Icon Int'l Schools balances academic rigor with character development. The focus on Service, Talent, Authenticity and Resilience creates well-rounded individuals.</p>
+                    <p class="testimonial-text">As an educator myself, I appreciate how Mercy Dew School balances academic rigor with character development. The focus on "learning to excel" creates well-rounded individuals.</p>
                     <div class="testimonial-author">
                         <div class="author-image">
                             <img src="https://via.placeholder.com/70" alt="Parent">
@@ -1869,14 +1865,14 @@
     <section class="gallery">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Life at De Emergent Icons</h2>
+                <h2>Life at Mercy Dew School</h2>
             </div>
             <div class="gallery-container">
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
                         alt="Classroom activities">
                     <div class="gallery-overlay">
-                        <h4>Global Learning</h4>
+                        <h4>Interactive Learning</h4>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
@@ -1888,23 +1884,23 @@
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-                        alt="Cultural activities">
+                        alt="E-learning">
                     <div class="gallery-overlay">
-                        <h4>Cultural Exchange</h4>
+                        <h4>E-Learning</h4>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
                     <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                         alt="School facilities">
                     <div class="gallery-overlay">
-                        <h4>State-of-the-Art Facilities</h4>
+                        <h4>Modern Facilities</h4>
                     </div>
                 </div>
                 <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
                     <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                        alt="International education">
+                        alt="Academic excellence">
                     <div class="gallery-overlay">
-                        <h4>International Perspective</h4>
+                        <h4>Academic Excellence</h4>
                     </div>
                 </div>
             </div>
@@ -1914,8 +1910,8 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2 data-aos="fade-up">Ready to Join the De Emergent Icons Family?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Empower your child to become a global citizen with knowledge, skills, and values for success in an ever-changing world. Applications are now open for all programs!</p>
+            <h2 data-aos="fade-up">Ready to Join the Mercy Dew School Family?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Empower your child to excel with world-class education, e-learning, and values that prepare them for success in an ever-changing world. Applications are now open for all programs!</p>
             <button class="btn" id="applyAdmissionBtn" data-aos="fade-up" data-aos-delay="200">Apply for Admission</button>
         </div>
     </section>
@@ -1925,8 +1921,8 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-about">
-                    <h3>About De Emergent Icon Int'l Schools</h3>
-                    <p>A leading international school recognized for excellence in education, dedicated to shaping the minds of future global citizens through a curriculum that transcends geographical and cultural boundaries.</p>
+                    <h3>About Mercy Dew School</h3>
+                    <p>A world-class standard school with diversity in learning, grooming students from kindergarten to secondary education with a focus on e-learning and computer-based training.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1952,20 +1948,23 @@
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <p>CM05, Camics Garden City, Sobi Road, Ilorin, Kwara State</p>
+                            <p>3 Sofoluw Street, Off Lajorin Road</p>
+                            <p>Behind PS General Drug Center</p>
+                            <p>Muritala Way, Sabo Oke, Ilorin, Kwara State</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <p>08035852045</p>
+                            <p>08035270494</p>
+                            <p>08079845984</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <p>info@deemergenticons.edu.ng</p>
-                            <p>admissions@deemergenticons.edu.ng</p>
+                            <p>info@mercydewschool.edu.ng</p>
+                            <p>admissions@mercydewschool.edu.ng</p>
                         </div>
                     </div>
                 </div>
@@ -2000,7 +1999,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 De Emergent Icon Int'l Schools. All Rights Reserved. Powered by EDUSOFT</p>
+                <p>&copy; 2023 Mercy Dew School. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -2010,33 +2009,37 @@
     <div class="modal" id="aboutModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>About De Emergent Icon Int'l Schools</h2>
+                <h2>About Mercy Dew School</h2>
                 <button class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
+                <h3>Our Story</h3>
+                <p>We have passion for a good standard education. We discovered the decay in our society through examination malpractice, and we glamor for a good education of children from all classes - from foundation which is kindergarten to secondary school certificate. Once they are groomed for world class standard, all forms of examination malpractice will be eradicated.</p>
+                <p>We are passionate about growing along with your class, not growing sackings in school.</p>
+
                 <h3>Our Mission</h3>
-                <p>To empower icons to become global citizens, equipped with the knowledge, skills, and values necessary to succeed in an ever-changing world.</p>
+                <p>To get children good education background from kindergarten to secondary education in order to build them with standard background to eradicate illiteracy in our society.</p>
 
                 <h3>Our Vision</h3>
-                <p>To be a leading international school recognized for excellence in education, and dedicated to shaping the minds of future leaders.</p>
+                <p>To groom students in a world standard-based education, for our society to be free from examination malpractice.</p>
 
                 <h3>Our Values</h3>
-                <p>Service, Talent, Authenticity and Resilience</p>
+                <p>We provide world-class teaching and trust that we teach standard and current revised curriculum which we know our wards can face world-class competition at any level in our school.</p>
 
                 <h3>Our Philosophy</h3>
-                <p>Embracing a curriculum that transcends geographical and cultural boundaries.</p>
+                <p>Our students are learning to excel.</p>
 
                 <h3>Our Programs</h3>
-                <p>Creche, Playpen, Kindergarten, Nursery, Primary, College</p>
+                <p>KG1-KG3, Basic 1-5, Junior School (3 years), Senior School (3 years)</p>
 
                 <h3>Our Facilities</h3>
-                <p>Well-Researched, World-Class, State of the art facilities</p>
+                <p>Well-researched, world-class, state-of-the-art facilities including e-learning classrooms and computer labs.</p>
 
-                <h3>School Anthem & Pledge</h3>
-                <p>Our school anthem and pledge reflect our commitment to nurturing global citizens who will make a positive impact on their communities and the world.</p>
+                <h3>School Anthem</h3>
+                <p>Our school anthem reflects our commitment to excellence, self-discipline, and confidence in our students.</p>
 
                 <div style="margin-top: 2rem;">
-                    <button class="btn" id="viewAnthemPledgeBtn">View Anthem & Pledge</button>
+                    <button class="btn" id="viewAnthemPledgeBtn">View School Anthem</button>
                 </div>
             </div>
         </div>
@@ -2051,28 +2054,28 @@
             </div>
             <div class="modal-body">
                 <h3>Comprehensive Educational Programs</h3>
-                <p>At De Emergent Icon Int'l Schools, we offer a continuum of educational programs designed to nurture students from their earliest years through to college preparation.</p>
+                <p>At Mercy Dew School, we offer a continuum of educational programs designed to nurture students from their earliest years through to secondary education.</p>
 
-                <h4>Creche & Playpen</h4>
-                <p>Our youngest learners are nurtured in a safe, stimulating environment that encourages exploration and early development through age-appropriate activities.</p>
+                <h4>Kindergarten (KG1-KG3)</h4>
+                <p>Our youngest learners are nurtured in a stimulating environment that encourages exploration and early development through age-appropriate activities and play-based learning.</p>
 
-                <h4>Kindergarten & Nursery</h4>
-                <p>Building foundational skills through play-based learning and structured activities that foster curiosity, creativity, and social development.</p>
-
-                <h4>Primary</h4>
+                <h4>Primary (Basic 1-5)</h4>
                 <p>Developing academic excellence, critical thinking, and character through a comprehensive curriculum that balances core subjects with creative and physical education.</p>
 
-                <h4>College</h4>
-                <p>Preparing students for higher education and global citizenship with specialized programs, career guidance, and advanced academic opportunities.</p>
+                <h4>Junior Secondary (3 years)</h4>
+                <p>Building on primary education with a broad-based curriculum that prepares students for senior secondary education and specialized subjects.</p>
+
+                <h4>Senior Secondary (3 years)</h4>
+                <p>Preparing students for higher education and career paths with specialized programs, career guidance, and advanced academic opportunities.</p>
 
                 <h3>Our Educational Approach</h3>
-                <p>Our curriculum transcends geographical and cultural boundaries, providing students with a truly international perspective. We focus on:</p>
+                <p>Our curriculum focuses on world-class standards and current revised curriculum, providing students with the knowledge and skills needed to compete globally. We focus on:</p>
                 <ul>
-                    <li>Global citizenship education</li>
-                    <li>Values-based learning (Service, Talent, Authenticity, Resilience)</li>
-                    <li>Innovative teaching methodologies</li>
-                    <li>Technology integration</li>
-                    <li>Cultural exchange and appreciation</li>
+                    <li>E-learning and computer-based training</li>
+                    <li>Diverse learning methodologies</li>
+                    <li>World-class teaching standards</li>
+                    <li>Eradication of examination malpractice</li>
+                    <li>Preparation for external CBT examinations</li>
                 </ul>
             </div>
         </div>
@@ -2086,15 +2089,15 @@
                 <button class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
-                <h3>Join Our Community of Global Citizens</h3>
-                <p>We welcome students who are eager to become global citizens and make a positive impact on the world. Our admissions process is designed to identify students who will thrive in our international learning environment.</p>
+                <h3>Join Our Community of Excellence</h3>
+                <p>We welcome students who are eager to learn and excel in a world-class educational environment. Our admissions process is designed to identify students who will thrive in our learning environment.</p>
 
                 <h3>Admission Process</h3>
                 <h4>Step 1: Inquiry</h4>
                 <p>Begin by contacting our admissions office or filling out our inquiry form. We'll provide you with detailed information about our programs and answer any questions you may have.</p>
 
                 <h4>Step 2: School Visit</h4>
-                <p>Schedule a tour of our campus to experience our international learning environment firsthand. You'll meet our dedicated staff and see our world-class facilities.</p>
+                <p>Schedule a tour of our campus to experience our learning environment firsthand. You'll meet our dedicated staff and see our world-class facilities.</p>
 
                 <h4>Step 3: Application</h4>
                 <p>Complete the application form and submit the required documents, including previous academic records, birth certificate, and passport photographs.</p>
@@ -2106,16 +2109,14 @@
                 <p>Our admissions team will review the application and inform you of the decision. If accepted, you'll receive an offer letter with further instructions.</p>
 
                 <h4>Step 6: Enrollment</h4>
-                <p>Complete the enrollment process by submitting the required fees and documents. Your child is now ready to begin their journey as a De Emergent Icon!</p>
+                <p>Complete the enrollment process by submitting the required fees and documents. Your child is now ready to begin their journey at Mercy Dew School!</p>
 
                 <h3>Programs Offered</h3>
                 <ul>
-                    <li>Creche</li>
-                    <li>Playpen</li>
-                    <li>Kindergarten</li>
-                    <li>Nursery</li>
-                    <li>Primary</li>
-                    <li>College</li>
+                    <li>Kindergarten (KG1-KG3)</li>
+                    <li>Primary (Basic 1-5)</li>
+                    <li>Junior Secondary (3 years)</li>
+                    <li>Senior Secondary (3 years)</li>
                 </ul>
 
                 <div style="margin-top: 2rem;">
@@ -2134,14 +2135,14 @@
             </div>
             <div class="modal-body">
                 <h3>World-Class Learning Environment</h3>
-                <p>At De Emergent Icon Int'l Schools, we've created a stimulating and safe environment where students can learn, grow, and develop into global citizens. Our facilities are designed to support our educational philosophy and enhance the learning experience.</p>
+                <p>At Mercy Dew School, we've created a stimulating and safe environment where students can learn, grow, and develop into well-rounded individuals. Our facilities are designed to support our educational philosophy and enhance the learning experience.</p>
 
                 <h3>Academic Facilities</h3>
                 <h4>Modern Classrooms</h4>
-                <p>Our bright, technologically equipped classrooms are designed to inspire learning and collaboration. Each classroom is equipped with modern teaching aids and resources.</p>
+                <p>Our bright, well-equipped classrooms are designed to inspire learning and collaboration. Each classroom is equipped with modern teaching aids and resources.</p>
 
-                <h4>Science Laboratories</h4>
-                <p>Well-equipped laboratories provide hands-on learning experiences for students, allowing them to explore scientific concepts through practical experiments.</p>
+                <h4>E-Learning Labs</h4>
+                <p>State-of-the-art computer labs with high-speed internet ensure our students develop essential digital literacy skills and are prepared for computer-based testing.</p>
 
                 <h4>Library and Resource Center</h4>
                 <p>Our library is a treasure trove of knowledge with a diverse collection of books, digital resources, and comfortable reading spaces that support research and leisure reading.</p>
@@ -2161,8 +2162,8 @@
                 <p>Age-appropriate playgrounds with safe, modern equipment provide spaces for younger children to develop motor skills and socialize through play.</p>
 
                 <h3>Specialized Facilities</h3>
-                <h4>Technology Labs</h4>
-                <p>State-of-the-art computer labs with high-speed internet ensure our students develop essential digital literacy skills.</p>
+                <h4>Science Laboratories</h4>
+                <p>Well-equipped laboratories provide hands-on learning experiences for students, allowing them to explore scientific concepts through practical experiments.</p>
 
                 <h4>Multipurpose Hall</h4>
                 <p>A spacious hall for assemblies, performances, and special events that bring our school community together.</p>
@@ -2195,9 +2196,9 @@
                     </div>
                     <div class="gallery-item">
                         <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-                            alt="Cultural activities">
+                            alt="E-learning">
                         <div class="gallery-overlay">
-                            <h4>Cultural Events</h4>
+                            <h4>E-Learning</h4>
                         </div>
                     </div>
                     <div class="gallery-item">
@@ -2209,9 +2210,9 @@
                     </div>
                     <div class="gallery-item">
                         <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="International education">
+                            alt="Academic excellence">
                         <div class="gallery-overlay">
-                            <h4>Global Perspective</h4>
+                            <h4>Academic Excellence</h4>
                         </div>
                     </div>
                     <div class="gallery-item">
@@ -2243,21 +2244,23 @@
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <p>CM05, Camics Garden City</p>
-                                <p>Sobi Road, Ilorin, Kwara State</p>
+                                <p>3 Sofoluw Street, Off Lajorin Road</p>
+                                <p>Behind PS General Drug Center</p>
+                                <p>Muritala Way, Sabo Oke, Ilorin, Kwara State</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <p>08035852045</p>
+                                <p>08035270494</p>
+                                <p>08079845984</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <p>info@deemergenticons.edu.ng</p>
-                                <p>admissions@deemergenticons.edu.ng</p>
+                                <p>info@mercydewschool.edu.ng</p>
+                                <p>admissions@mercydewschool.edu.ng</p>
                             </div>
                         </div>
                     </div>
@@ -2290,17 +2293,17 @@
                 <div
                     style="height: 300px; background-color: #f1f1f1; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
                     <p><i class="fas fa-map-marked-alt"
-                            style="font-size: 2rem; color: var(--primary-color); margin-right: 1rem;"></i> Map of De Emergent Icon Int'l Schools Location</p>
+                            style="font-size: 2rem; color: var(--primary-color); margin-right: 1rem;"></i> Map of Mercy Dew School Location</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Anthem & Pledge Modal -->
+    <!-- Anthem Modal -->
     <div class="modal" id="anthemPledgeModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>School Anthem & Pledge</h2>
+                <h2>School Anthem</h2>
                 <button class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
@@ -2308,58 +2311,53 @@
                     <div class="anthem">
                         <h3>School Anthem</h3>
                         <div class="anthem-content">
-                            <p><strong>Verse 1</strong><br>
-                            In unity we stand, with hearts and minds as one<br>
-                            At <strong>De Emergent Icons</strong>, our journey has just begun<br>
-                            We'll learn, we'll grow, we'll shine so bright<br>
-                            With knowledge, skills, and values, we'll make our mark tonight</p>
+                            <p>Mercy dew school is the best school,<br>
+                            is the best school in the world,<br>
+                            greater heights and mind exploits<br>
+                            is the portion of our school</p>
                             
-                            <p class="chorus"><strong>Chorus</strong><br>
-                            <strong>De Emergent Icons</strong>, we rise above<br>
-                            With innovation, creativity, and a heart of love<br>
-                            We'll make a difference, we'll make it real<br>
-                            <strong>De Emergent Icons</strong>, our spirit will reveal</p>
+                            <p>Self discipline and self confidence<br>
+                            is the moral of our school,<br>
+                            knowledge is light we learn to excel<br>
+                            we are light and we shine bright</p>
                             
-                            <p><strong>Verse 2</strong><br>
-                            From diverse backgrounds, we come as one<br>
-                            With a shared vision, to make our dreams come true<br>
-                            We'll strive for excellence, in all we do<br>
-                            And make a positive impact, on me, on you, on our community too</p>
+                            <p>Mercy dew school is the best school,<br>
+                            is the best school in the world,<br>
+                            greater heights and mind exploits<br>
+                            is the portion of our school</p>
                             
-                            <p class="chorus"><strong>Chorus</strong></p>
+                            <p>We are the learners of Mercy Dew school,<br>
+                            We are the learners of mercy dew,<br>
+                            we learn and create peace of mind<br>
+                            come to us you will know that we are good,<br>
+                            we are proud of Mercy Dew</p>
                             
-                            <p><strong>Bridge</strong><br>
-                            We'll stand together, through joy and strife<br>
-                            Supporting each other, as we navigate life<br>
-                            With empathy, kindness, and a willingness to learn<br>
-                            We'll become the leaders, of a brighter tomorrow's burn</p>
+                            <p>We live as one and share peace and love<br>
+                            learning to excel is the best thing<br>
+                            come to us you we know that we are good<br>
+                            we are proud of Mercy Dew</p>
                             
-                            <p class="chorus"><strong>Chorus</strong></p>
-                            
-                            <p><strong>Outro</strong><br>
-                            <strong>De Emergent Icons</strong>, we shine so bright<br>
-                            With a radiant light, that guides us through the night<br>
-                            We'll keep rising, to greater heights<br>
-                            <strong>De Emergent Icons</strong>, our anthem, our guiding light!</p>
+                            <p>We are proud !<br>
+                            We are proud !!<br>
+                            We are proud!!!</p>
                         </div>
                     </div>
                     <div class="pledge">
-                        <h3>School Pledge</h3>
+                        <h3>Our Philosophy</h3>
                         <div class="pledge-content">
-                            <p>I am a <strong>De Emergent Icon</strong>, a shining light<br>
-                            I pledge to ignite my potential, and make it bright<br>
-                            I will embrace challenges, and learn with glee<br>
-                            And use my talents to make a positive impact, globally</p>
+                            <p>At Mercy Dew School, our philosophy is simple yet powerful: <strong>Our students are learning to excel</strong>.</p>
                             
-                            <p>I will be a beacon of hope, in my community<br>
-                            A role model for others, with integrity<br>
-                            I will respect and celebrate, our diversity<br>
-                            And strive for excellence, with creativity</p>
+                            <p>This guiding principle shapes everything we do, from our curriculum design to our teaching methodologies. We believe that every child has the potential to achieve greatness when provided with the right environment, resources, and guidance.</p>
                             
-                            <p>I will be a force for good, with a heart that cares<br>
-                            A problem solver, with innovative flair<br>
-                            I am a <strong>De Emergent Icon</strong>, and I pledge to be<br>
-                            A leader of tomorrow, with a bright destiny</p>
+                            <p>Our motto "WE LEARN TO EXCEL" reflects our commitment to:</p>
+                            <ul>
+                                <li>Providing diverse learning opportunities</li>
+                                <li>Implementing world-class teaching standards</li>
+                                <li>Embracing technology in education</li>
+                                <li>Eradicating examination malpractice</li>
+                                <li>Building a solid educational foundation</li>
+                                <li>Preparing students for global competition</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -2375,7 +2373,7 @@
                 <button class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
-                <h3>Apply to De Emergent Icon Int'l Schools</h3>
+                <h3>Apply to Mercy Dew School</h3>
                 <p>Please complete the form below to apply for admission. All fields marked with an asterisk (*) are required.</p>
 
                 <form id="applicationForm">
@@ -2403,12 +2401,20 @@
                         <label for="program">Program Applying For *</label>
                         <select id="program" class="form-control" required>
                             <option value="">Select Program</option>
-                            <option value="creche">Creche</option>
-                            <option value="playpen">Playpen</option>
-                            <option value="kindergarten">Kindergarten</option>
-                            <option value="nursery">Nursery</option>
-                            <option value="primary">Primary</option>
-                            <option value="college">College</option>
+                            <option value="kg1">KG1</option>
+                            <option value="kg2">KG2</option>
+                            <option value="kg3">KG3</option>
+                            <option value="basic1">Basic 1</option>
+                            <option value="basic2">Basic 2</option>
+                            <option value="basic3">Basic 3</option>
+                            <option value="basic4">Basic 4</option>
+                            <option value="basic5">Basic 5</option>
+                            <option value="jss1">JSS 1</option>
+                            <option value="jss2">JSS 2</option>
+                            <option value="jss3">JSS 3</option>
+                            <option value="ss1">SS 1</option>
+                            <option value="ss2">SS 2</option>
+                            <option value="ss3">SS 3</option>
                         </select>
                     </div>
 
@@ -2462,8 +2468,8 @@
                 <button class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
-                <h3>Experience De Emergent Icon Int'l Schools</h3>
-                <p>We invite you to visit our campus and experience our international learning environment. During your visit, you'll have the opportunity to tour our facilities, observe classes, and meet our dedicated staff.</p>
+                <h3>Experience Mercy Dew School</h3>
+                <p>We invite you to visit our campus and experience our learning environment. During your visit, you'll have the opportunity to tour our facilities, observe classes, and meet our dedicated staff.</p>
 
                 <form id="visitForm">
                     <div class="form-group">
@@ -2696,28 +2702,26 @@
 
             switch (page) {
                 case 'about':
-                    title = 'About De Emergent Icons';
+                    title = 'About Mercy Dew School';
                     content = `
-                        <p>De Emergent Icon Int'l Schools empowers students to become global citizens equipped with knowledge, skills, and values for success in an ever-changing world.</p>
+                        <p>Mercy Dew School is a world-class standard school with diversity in learning, grooming students from kindergarten to secondary education with a focus on e-learning and computer-based training.</p>
                         <h4>Our Mission</h4>
-                        <p>To empower icons to become global citizens, equipped with the knowledge, skills, and values necessary to succeed in an ever-changing world.</p>
+                        <p>To get children good education background from kindergarten to secondary education in order to build them with standard background to eradicate illiteracy in our society.</p>
                         <h4>Our Vision</h4>
-                        <p>To be a leading international school recognized for excellence in education, and dedicated to shaping the minds of future leaders.</p>
+                        <p>To groom students in a world standard-based education, for our society to be free from examination malpractice.</p>
                         <button class="btn" id="aboutMoreBtn">Learn More</button>
                     `;
                     break;
                 case 'programs':
                     title = 'Our Programs';
                     content = `
-                        <p>We offer a continuum of educational programs designed to nurture students from their earliest years through to college preparation.</p>
+                        <p>We offer a continuum of educational programs designed to nurture students from their earliest years through to secondary education.</p>
                         <h4>Programs Offered</h4>
                         <ul>
-                            <li>Creche</li>
-                            <li>Playpen</li>
-                            <li>Kindergarten</li>
-                            <li>Nursery</li>
-                            <li>Primary</li>
-                            <li>College</li>
+                            <li>Kindergarten (KG1-KG3)</li>
+                            <li>Primary (Basic 1-5)</li>
+                            <li>Junior Secondary (3 years)</li>
+                            <li>Senior Secondary (3 years)</li>
                         </ul>
                         <button class="btn" id="programsMoreBtn">Learn More</button>
                     `;
@@ -2725,7 +2729,7 @@
                 case 'admissions':
                     title = 'Admissions';
                     content = `
-                        <p>Join our community of global citizens and empower your child to make a positive impact on the world.</p>
+                        <p>Join our community of excellence and empower your child to learn and excel in a world-class educational environment.</p>
                         <h4>Admission Process</h4>
                         <ol>
                             <li>Inquiry</li>
@@ -2746,11 +2750,11 @@
                         <h4>Key Facilities</h4>
                         <ul>
                             <li>Modern Classrooms</li>
-                            <li>Science Laboratories</li>
+                            <li>E-Learning Labs</li>
                             <li>Library & Resource Center</li>
-                            <li>Art Studios</li>
+                            <li>Science Laboratories</li>
                             <li>Sports Fields</li>
-                            <li>Technology Labs</li>
+                            <li>Art Studios</li>
                         </ul>
                         <button class="btn" id="facilitiesMoreBtn">Learn More</button>
                     `;
@@ -2761,8 +2765,8 @@
                         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
                             <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="School" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
                             <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Students" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Sports" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Science" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="E-learning" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Facilities" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
                         </div>
                         <button class="btn" id="galleryMoreBtn">View Full Gallery</button>
                     `;
@@ -2773,21 +2777,23 @@
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <p>CM05, Camics Garden City</p>
-                                <p>Sobi Road, Ilorin, Kwara State</p>
+                                <p>3 Sofoluw Street, Off Lajorin Road</p>
+                                <p>Behind PS General Drug Center</p>
+                                <p>Muritala Way, Sabo Oke, Ilorin, Kwara State</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <p>08035852045</p>
+                                <p>08035270494</p>
+                                <p>08079845984</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <p>info@deemergenticons.edu.ng</p>
-                                <p>admissions@deemergenticons.edu.ng</p>
+                                <p>info@mercydewschool.edu.ng</p>
+                                <p>admissions@mercydewschool.edu.ng</p>
                             </div>
                         </div>
                         <button class="btn" id="contactMoreBtn">Send Message</button>
@@ -2959,7 +2965,7 @@
                 <div style="text-align: center; padding: 2rem;">
                     <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--success-color); margin-bottom: 1rem;"></i>
                     <h3>Message Sent Successfully!</h3>
-                    <p>Thank you for contacting De Emergent Icon Int'l Schools. We have received your message and will get back to you shortly.</p>
+                    <p>Thank you for contacting Mercy Dew School. We have received your message and will get back to you shortly.</p>
                     <button class="btn" onclick="closeModal()">Close</button>
                 </div>
             `;
@@ -2973,7 +2979,7 @@
                 <div style="text-align: center; padding: 2rem;">
                     <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--success-color); margin-bottom: 1rem;"></i>
                     <h3>Application Submitted Successfully!</h3>
-                    <p>Thank you for applying to De Emergent Icon Int'l Schools. We have received your application and will contact you soon with the next steps.</p>
+                    <p>Thank you for applying to Mercy Dew School. We have received your application and will contact you soon with the next steps.</p>
                     <button class="btn" onclick="closeModal()">Close</button>
                 </div>
             `;
@@ -2987,7 +2993,7 @@
                 <div style="text-align: center; padding: 2rem;">
                     <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--success-color); margin-bottom: 1rem;"></i>
                     <h3>Visit Scheduled Successfully!</h3>
-                    <p>Thank you for scheduling a visit to De Emergent Icon Int'l Schools. We have received your request and will confirm your visit shortly.</p>
+                    <p>Thank you for scheduling a visit to Mercy Dew School. We have received your request and will confirm your visit shortly.</p>
                     <button class="btn" onclick="closeModal()">Close</button>
                 </div>
             `;
