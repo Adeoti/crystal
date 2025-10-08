@@ -1515,7 +1515,8 @@
             <nav class="navbar">
                 <div class="logo">
                     <!-- Placeholder for school logo -->
-                    <div style="width: 60px; height: 60px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">MDS</div>
+                    {{-- <div style="width: 60px; height: 60px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">MDS</div> --}}
+                    <img src="{{asset('school-images/mercydew_logo.jpeg')}}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;" />
                     <h1>Mercy <span>Dew</span> School</h1>
                 </div>
                 <ul class="nav-links">
