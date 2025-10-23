@@ -1521,7 +1521,7 @@
                 <div class="logo">
                     <!-- Placeholder for school logo -->
                     {{-- <div style="width: 60px; height: 60px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">MDS</div> --}}
-                    <img src="{{ asset('school-images/mercydew_logo.jpeg') }}"
+                    <img src="{{ asset('school-images/crystal_logo.png') }}"
                         style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;" />
                     <h1>Crystal <span>Model</span> Schools</h1>
                 </div>
@@ -1576,8 +1576,8 @@
                     <button class="btn" id="discoverStoryBtn">Discover Our Story</button>
                 </div>
                 <div class="welcome-image" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
-                        alt="Students at Crystal Model Schools">
+                    <img src="{{asset('school-images/ceo.jpeg')}}"
+                        alt="CEO of Crystal Model Schools">
                 </div>
             </div>
         </div>
@@ -1654,7 +1654,7 @@
                 </div>
                 <div class="program-card" data-aos="fade-up" data-aos-delay="200" data-program="arts">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+                        <img src="{{asset('school-images/compound.jpeg')}}"
                             alt="World Class Education">
                     </div>
                     <div class="card-content">
