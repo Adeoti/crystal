@@ -10,8 +10,6 @@ use Illuminate\Support\Facades\Storage;
 
 class ResultUpload extends Model
 {
-    //
-
     public function resultRoot()
     {
         return $this->belongsTo(ResultRoot::class);
